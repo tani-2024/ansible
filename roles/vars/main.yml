@@ -1,0 +1,12 @@
+---
+# Common variables
+common_packages:
+  - vim
+  - curl
+  - git
+
+# Webserver variables
+webserver_package:
+  Debian: apache2
+  RedHat: httpd
+

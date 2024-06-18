@@ -1,0 +1,14 @@
+all:
+   hosts:
+        web01-ubuntu:
+           ansible_host: 192.168.33.16
+           ansible_user: vagrant
+
+        wbe02-centos:
+           ansible_host: 192.168.33.14
+           ansible_user: vagrant
+   children:
+        webservers:
+           hosts:
+             web01-ubuntu:
+             wbe02-centos:

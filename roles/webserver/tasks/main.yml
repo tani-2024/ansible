@@ -1,0 +1,21 @@
+---
+- name: Install Apache (Debian)
+  apt:
+    name: apache2
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: Install Apache (RedHat)
+  yum:
+    name: httpd
+    state: present
+  when: ansible_os_family == "RedHat"
+
+- name: Copy the index.html file
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+  notify:
+    - Restart Apache
+    - Restart HTTPD
+
