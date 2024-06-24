@@ -2,6 +2,9 @@
 
 This Ansible project sets up a web server and a database server. It includes variables, loops, conditionals (`when`), handlers, and roles.
 
+## Prerequisites
+A control virtual machines and client host machines
+
  ## Terminologies
  1. **Handlers:** Handlers are tasks that are triggered by other tasks using the notify directive.
  2. **Roles:** Roles are a way to organize and reuse Ansible tasks, handlers, variables, and other components.
