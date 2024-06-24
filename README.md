@@ -20,6 +20,7 @@ This Ansible project sets up a web server and a database server. It includes var
 │       └── templates
 │           └── index.html.j2
 └── site.yml
+
  ## Terminologies
  1. **Handlers:** Handlers are tasks that are triggered by other tasks using the notify directive.
  2. **Roles:** Roles are a way to organize and reuse Ansible tasks, handlers, variables, and other components.
